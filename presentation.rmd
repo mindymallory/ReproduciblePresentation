@@ -1,0 +1,121 @@
+---
+title: "Reproducible Research Practices for Economists"
+author: "Mindy L. Mallory"
+date: "October 24, 2017"
+output:
+  beamer_presentation: 
+    theme: "Boadilla"
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Questions for the Audience
+
+## How many of your research folders look like this?
+
+
+![Picking on Zhepeng](presentation-assets/picking-on-zhepeng.png)
+
+
+
+
+## How many of you have a research work flow that looks like this?
+
+![](presentation-assets/workflow.png)
+
+
+## Questions for the Audience
+
+\centering
+
+How many of you would rather die than have to reproduce a table from a paper you published 2 years ago? \par
+
+
+
+
+## Questions for the Audience
+
+
+\centering
+Do you wake up in a cold sweat dreaming that Reviewer number 2 asked you to update your dataset (perform robustness test, etc) and you couldn't even reproduce your original results? \par
+
+
+
+
+## Questions for the Audience
+
+\centering
+Students, have you ever purposely obfuscated your code figuring if your professor can't follow it they can't criticise it? \par
+
+
+
+
+## Questions for the Audience
+
+\centering
+Have you ever lost data between submission and being asked to revise and resubmit and then you had to go and REPURCHASE!!! said data? \par
+
+
+
+##  Questions for the Audience 
+
+\centering
+Have you ever lost an entire paper due to the Word file becoming corrupted then you thought you salvaged the paper through document recovery but then it got rejected because you missed some weird characters from the file corruption and reviewer number 2 recommended rejecting your paper becuase the authors were 'careless' to allow the weird characters to remain the document? \par
+
+
+
+## I can say yes to all of these questions! 
+
+\centering
+But I got tired of being nervous all the time! \par
+
+
+##
+
+
+\centering
+  There is a better way!\par
+
+
+## Reproducible research with R, RStudio, RMarkdown, Knitr, and Github
+
+  + [R](https://www.r-project.org/) - is awesome statitstical computing software (open source and free!)  
+  
+  
+  + [Rstudio](https://www.rstudio.com/) - is an awesome integrated development environment (program making it convenient to work with R); also open source and free  
+
+
+## Reproducible research with R, RStudio, RMarkdown, Knitr, and Github
+
+  + [RMarkdown](http://rmarkdown.rstudio.com/) is a kind of markup language supported by RStudio that uses **Knitr** to weave statistical analysis and results into beautifully formatted documents.  
+  
+    + Written in plaintext, it understands latex code and documents can be rendered into many different output formats
+        + PDF
+        + Beamer
+        + HTML
+        + Word*
+
+
+## Reproducible research with R, RStudio, RMarkdown, Knitr, and Github
+
+
+  + Github - is a cloud-based repository that is great at versioning (it was designed by and for software developers)
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
