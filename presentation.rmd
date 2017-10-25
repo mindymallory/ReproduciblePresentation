@@ -41,7 +41,7 @@ How many of you would rather die than have to reproduce a table from a paper you
 
 
 \centering
-Do you wake up in a cold sweat dreaming that Reviewer number 2 asked you to update your dataset (perform robustness test, etc) and you couldn't even reproduce your original results? \par
+Do you wake up in a cold sweat dreaming that Reviewer number 2 asked you to update your data-set (perform robustness test, etc) and you couldn't even reproduce your original results? \par
 
 
 
@@ -49,7 +49,7 @@ Do you wake up in a cold sweat dreaming that Reviewer number 2 asked you to upda
 ## Questions for the Audience
 
 \centering
-Students, have you ever purposely obfuscated your code figuring if your professor can't follow it they can't criticise it? \par
+Students, have you ever purposely obfuscated your code figuring if your professor can't follow it they can't criticize it? \par
 
 
 
@@ -64,7 +64,7 @@ Have you ever lost data between submission and being asked to revise and resubmi
 ##  Questions for the Audience 
 
 \centering
-Have you ever lost an entire paper due to the Word file becoming corrupted then you thought you salvaged the paper through document recovery but then it got rejected because you missed some weird characters from the file corruption and reviewer number 2 recommended rejecting your paper becuase the authors were 'careless' to allow the weird characters to remain the document? \par
+Have you ever lost an entire paper due to the Word file becoming corrupted then you thought you salvaged the paper through document recovery but then it got rejected because you missed some weird characters from the file corruption and reviewer number 2 recommended rejecting your paper because the authors were 'careless' to allow the weird characters to remain the document? \par
 
 
 
@@ -83,7 +83,7 @@ But I got tired of being nervous all the time! \par
 
 ## Reproducible research with R, RStudio, RMarkdown, Knitr, and Github
 
-  + [R](https://www.r-project.org/) - is awesome statitstical computing software (open source and free!)  
+  + [R](https://www.r-project.org/) - is awesome statistical computing software (open source and free!)  
   
   
   + [Rstudio](https://www.rstudio.com/) - is an awesome integrated development environment (program making it convenient to work with R); also open source and free  
