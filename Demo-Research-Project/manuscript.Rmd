@@ -1,0 +1,56 @@
+---
+title: "A Very Detailed Paper on the Soybean Complex"
+author: "Mindy L. Mallory"
+date: "November 6, 2017"
+output: pdf_document
+bibliography: references.bib
+---
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(xtable)
+
+
+# This code chunk will call the cleaning.R, pretesting.R, and analysis.R files to prepare the results to be displayed in the document. 
+
+source('analysis/helper-scripts/cleaning.R')
+source('analysis/helper-scripts/pretesting.R')
+source('analysis/analysis.R')
+
+
+
+```
+
+# Introduction
+
+The soybean complex consists of soybeans, soybean meal, and soybean oil. The relationships between these three price series are interesting to study because they are bound by a production relationship. 
+
+# Literature Review
+
+Both [@johnson1955estimates] and [@simon1999soybean] studied soybeans, but they found different things. 
+
+# Methods
+
+We will test all three prices for stationarity and then we will fit a Vectro Autoregression or a Vector Error Correction Model based on our findings. 
+
+
+# Results
+
+We find that all the series are non-stationary. See table 1 for results of Augmented Dickey-Fuller tests for each series. 
+
+
+
+# Tables and Figures
+
+### Table 1: Augmented Dickey-Fuller Tests for each series
+```{r, echo=FALSE, warning=FALSE, message=FALSE, results="asis"}
+rownames(adfResults) = c("Beans", "Meal", "Oil")
+
+print(xtable(adfResults[,c(1,2)]), comment=FALSE)
+
+```
+
+
+
+
+# References
+

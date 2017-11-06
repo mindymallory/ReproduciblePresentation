@@ -107,14 +107,34 @@ But I got tired of being nervous all the time! \par
       
       
       
+## Step 1 - Set up a clean, reproducible project directory
+
++ RStudio Rule #1 - use projects!  
+  + Create 'New Project' in the base of your research project's folder
+  + Never change the working directory
+
+![](presentation-assets/directory.png)
 
 
 
+## Step 2 - Put your raw data in the 'data' folder and never touch again 
+
+![](presentation-assets/data-directory.png)
+
+## Step 3 - Organize Scripts
+
++ Document what each script does  
++ If your project requires an elaborate 'readme.txt' with instructions about which scripts to run and in what order, you probably need to automate this. 
+
+![](presentation-assets/script.png)
+
+## Step 3 - Organize Scripts
+
++ Document what each script does  
++ If your project requires an elaborate 'readme.txt' with instructions about which scripts to run and in what order, you probably need to automate this. 
 
 
-
-
-
+![](presentation-assets/script2.png)
 
 
 
