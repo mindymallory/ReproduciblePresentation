@@ -106,44 +106,6 @@ But I got tired of being nervous all the time! \par
   + Github - is a cloud-based repository that is great at versioning (it was designed by and for software developers)
       
       
-## The Basics - Before Getting Started
-
-+ Install [R](https://www.r-project.org/), [RStudio](https://www.rstudio.com/), [Git](https://git-scm.com/downloads), and [Gitkraken](https://www.gitkraken.com/)
-+ Install the following packages in R by executing the following commands in the RStudio console:
-
-```{r, echo = TRUE, eval=FALSE}
-install.packages("xts")
-install.packages("tseries")
-install.packages("tsDyn")
-install.packages("broom")
-install.packages("vars")
-```
-
-      
-## The Basics - Set up a clean, reproducible project repository
-
-+ Create a new repository on Github.com
-  + Choose a meaningful repository name
-  + Be sure to initialize with a Readme file by clicking the checkbox (somehow it helps RStudio and GitHub set an initial connection)
-  + After creating the repository
-  
-![](presentation-assets/github-create.png)
-
-## The Basics - Set up a clean, reproducible project repository
-
-+ After creating the repository, click 'Clone or Download' and copy the link to the repository. 
-
-![](presentation-assets/clone.png)
-
-
-## The Basics - Set up a clean, reproducible project repository
-
-+ Open up RStudio and navigate through 'File' -> 'New Project'
-+ Choose 'Version Control' -> 'Git'
-+ Then paste the link you copied from github.com into 'Repository URL' and click 'Create Project'
-
-![](presentation-assets/clone2.png)
-
 
 
 
@@ -164,14 +126,14 @@ install.packages("vars")
 ## The Basics - Organize Scripts
 
 + Document what each script does  
-+ If your project requires an elaborate 'readme.txt' with instructions about which scripts to run and in what order, you probably need to automate this. 
++ If your project requires an elaborate 'readme.txt' with instructions about which scripts to run and in what order, your work is not reproducible. 
 
 ![](presentation-assets/script.png)
 
 ## The Basics - Organize Scripts
 
 + Document what each script does  
-+ If your project requires an elaborate 'readme.txt' with instructions about which scripts to run and in what order, you probably need to automate this. 
++ If your project requires an elaborate 'readme.txt' with instructions about which scripts to run and in what order, your work is not reproducible. 
 
 
 ![](presentation-assets/script2.png)
@@ -187,7 +149,7 @@ Your analysis may involve 'cleaning' raw data.
 
 This type of activity should be done by the `cleaning.R` script that takes raw data files and makes them useful.
 
-If at all possibly, do not save intermediate cleaned data. Run scripts that build from raw data everytime so you know it is reproducible. 
+If at all possible, do not save intermediate cleaned data. Run scripts that build from raw data everytime so you know it is reproducible. 
 
 *Look at cleaning.R*
 
@@ -218,9 +180,109 @@ Then, your main analysis can be performed in analysis.R. This script will fit mo
 
 ## Commit and Push to Github.com
 
-Gitkraken is a nice interface for this. 
+Unlike Dropbox and Box that automatically watch for changes and upload new file versions to cloud storage, you have to manually commit changes and send them to the remote repository. 
 
+Can be tricky, until you get in the habit of commiting and pushing, similar to how we automatically have the reflext to save a file every so often.
+
+Advantage - If your file gets corrupted, it won't overwrite all your copies with the corrupted version (this happened to me).
+
+Github is a time machine, you can go back and recover your files at any state of the repository. 
+
+## Commit and Push to Github.com
+
+Git Basic Steps:
+
++ Stage - means get changes ready to be commited to the repository
++ Commit - means they are 'permanately' part of the repository record
++ Push - sends you committed changes to the remote repository for safe keeping forever. 
+
+## Git Clients
+
+Git can be run in a git command line interface (no idea how this works)
+
+Git is integrated in RStudio, and for simple changes it often works ok; however, it can be buggy. 
+
+## Git Clients
+
+[Gitkraken](https://www.gitkraken.com/) is a nice GUI that I find intuitive and easy to use. 
+
+![](presentation-assets/gitkraken.png)
+
+## Commit and Push to Github.com
+
+*Show the Github time machine*
 
 ## Use 'Releases' to Mark Important Milestones in Paper's Progress
+
+Since Github was developed by and for software developers, 'Releases' are built it. 
+
++ Releases signify specific points in the repository's commit history
+  + i.e. v2.3.0 of your software
+  
++ Convenient for important versions of your paper
+  + AAEA invited paper 
+  + AJAE submission
+  + JARE submission
+  + etc...
+
+## Use 'Releases' to Mark Important Milestones in Paper's Progress
+
+This is useful.
+
++ Say you have a table in your conference paper. 
++ You cut it for the AJAE submission
++ It gets rejected and you send it to JARE
++ Reviewer #2 asks you do exactly this and R&R back to JARE
+  + You can go to the AAEA 'release' and recover exactly the state of your repository where you have working code that generates this table
+  + Easily incorporate it back into the more recent version
+  
+  
+## How to Prevent Your Code from Breaking
+
+## The Basics - Get Set up On Your Own
+
++ Install [R](https://www.r-project.org/), [RStudio](https://www.rstudio.com/), [Git](https://git-scm.com/downloads), and [Gitkraken](https://www.gitkraken.com/)
++ Install the following packages in R by executing the following commands in the RStudio console:
+
+```{r, echo = TRUE, eval=FALSE}
+install.packages("xts")
+install.packages("tseries")
+install.packages("tsDyn")
+install.packages("broom")
+install.packages("vars")
+```
+
+      
+## The Basics - Get Set up On Your Own
+
++ Create a new repository on Github.com
+  + Choose a meaningful repository name
+  + Be sure to initialize with a Readme file by clicking the checkbox (somehow it helps RStudio and GitHub set an initial connection)
+  + After creating the repository
+  
+![](presentation-assets/github-create.png)
+
+## The Basics - Get Set up On Your Own
+
++ After creating the repository, click 'Clone or Download' and copy the link to the repository. 
+
+![](presentation-assets/clone.png)
+
+
+## The Basics - Get Set up On Your Own
+
++ Open up RStudio and navigate through 'File' -> 'New Project'
++ Choose 'Version Control' -> 'Git'
++ Then paste the link you copied from github.com into 'Repository URL' and click 'Create Project'
+
+![](presentation-assets/clone2.png)
+
+## The Basics - Get Set up On Your Own
+
+Now your RStudio project is connected to Github. Periodically commit your local changes to the Github repository. 
+
++ Stage Changes
++ Commit Changes
++ Push Changes
 
 
