@@ -218,6 +218,7 @@ Then, your main analysis can be performed in analysis.R. This script will fit mo
 
 ## Commit and Push to Github.com
 
+Gitkraken is a nice interface for this. 
 
 
 ## Use 'Releases' to Mark Important Milestones in Paper's Progress
