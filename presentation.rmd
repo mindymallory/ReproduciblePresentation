@@ -189,10 +189,37 @@ This type of activity should be done by the `cleaning.R` script that takes raw d
 
 If at all possibly, do not save intermediate cleaned data. Run scripts that build from raw data everytime so you know it is reproducible. 
 
-*Look at Cleaning.R*
+*Look at cleaning.R*
 
 
 ## Data Analysis - Pretesting
 
+Similarly, you may need to check for stationarity or do other common diagnostic tests that inform model choice. 
+
+This file will take cleaned data from `cleaning.R` and perform diagnostics. The tests will create R objects that can be called an inserted into manuscript results.
+
+*Look at pretesting.R*
+
+## Data Analysis - Fit Main Model
+
+Then, your main analysis can be performed in analysis.R. This script will fit model and the output will be R objects that can be inserted to display results directly into tables and text of your manuscript. 
+
+*Look at analysis.R*
+
+## Write Paper in RMarkdown
+
+[RMarkdown](http://rmarkdown.rstudio.com/) is an easy to use way to create reproducible reports that can be rendered to many formats. 
+
++ Accepts Latex commands for math equations and other formatting
++ Supports reference management with bibtex
++ Excecute R scripts right in the document and incorporate the results into your document
+
+*Look at manuscript.Rmd*
+
+## Commit and Push to Github.com
+
+
+
+## Use 'Releases' to Mark Important Milestones in Paper's Progress
 
 

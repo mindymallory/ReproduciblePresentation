@@ -10,5 +10,9 @@ varResult <- VAR(data, p = cointTest[[6]][2])
 
 
 
-resultDataFrame <- as.data.frame(rbind(varResult[['varresult']]$Beans$coefficients, varResult[['varresult']]$Meal$coefficients, varResult[['varresult']]$Oil$coefficients))
+t <- summary(varResult)
 
+varPrint <- rbind(t[[2]]$Beans$coefficients, t[[2]]$Meal$coefficients, t[[2]]$Oil$coefficients)
+c <- c("Beans", "", "", "", "Meal", "", "", "", "Oil", "", "", "")
+varPrint <- cbind.data.frame(c, rownames(varPrint), varPrint)
+colnames(varPrint) <- c("Equation", "Variable", "Estimate", "Std. Error", "t-value", "Pr(>|t|)")

@@ -30,14 +30,22 @@ Both [@johnson1955estimates] and [@simon1999soybean] studied soybeans, but they 
 
 # Methods
 
-We will test all three prices for stationarity and then we will fit a Vectro Autoregression or a Vector Error Correction Model based on our findings. 
+We will test all three prices for stationarity and then we will fit a Vector Autoregression or a Vector Error Correction Model based on our findings. 
+
+$$Y= mX + b$$
+
+
 
 
 # Results
 
-We find that all the series are non-stationary. See table 1 for results of Augmented Dickey-Fuller tests for each series. 
+We find that all the series are non-stationary. See table 1 for results of Augmented Dickey-Fuller tests for each series. Table 2 shows how the VAR model results came out. We find that the lagged coeficient for Meal in the Bean equation is `r round(varPrint[2,3], 2)`.
 
+# Conclusions
 
+This concludes our paper. Future research should do much more. 
+
+\pagebreak
 
 # Tables and Figures
 
@@ -49,6 +57,27 @@ print(xtable(adfResults[,c(1,2)]), comment=FALSE)
 
 ```
 
+
+### Table 2: Vector Autogressive Model Results 
+
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, results="asis"}
+print(xtable(varPrint), comment=FALSE, include.rownames=FALSE)
+```
+
+\pagebreak
+
+### Figure 1: Prices
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 6, fig.height = 9}
+library(ggplot2)
+library(gridExtra)
+b <- autoplot(data$Beans) + theme_bw() + ylab("cents/bushel") + xlab("") + ggtitle("Beans")
+m <- autoplot(data$Meal) + theme_bw() + ylab("$/ton") + xlab("") + ggtitle("Meal")
+o <- autoplot(data$Oil) + theme_bw() + ylab("cents/bushel") + xlab("") + ggtitle("Oil")
+grid.arrange(b, m, o)
+```
+\pagebreak
 
 
 

@@ -2,13 +2,14 @@
 library(tseries)
 library(tsDyn)
 library(broom)
+
 # Test if Data are Stationary
 # If fail to reject, data are non-stationary
 adfBeans <- adf.test(data$Beans)
 adfMeal  <- adf.test(data$Meal)
 adfOil   <- adf.test(data$Oil)
 
-# Use Broom to get statistical model results into a dataframe when supported. 
+# Use Broom functions (tidy) to get statistical model results into a dataframe when supported. 
 # This makes it easier to programatically insert tables of results into your manuscript.
 adfBeans <- tidy(adfBeans)
 adfMeal <- tidy(adfMeal)
