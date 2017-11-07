@@ -106,29 +106,69 @@ But I got tired of being nervous all the time! \par
   + Github - is a cloud-based repository that is great at versioning (it was designed by and for software developers)
       
       
+## The Basics - Before Getting Started
+
++ Install [R](https://www.r-project.org/), [RStudio](https://www.rstudio.com/), [Git](https://git-scm.com/downloads), and [Gitkraken](https://www.gitkraken.com/)
++ Install the following packages in R by executing the following commands in the RStudio console:
+
+```{r, echo = TRUE, eval=FALSE}
+install.packages("xts")
+install.packages("tseries")
+install.packages("tsDyn")
+install.packages("broom")
+install.packages("vars")
+```
+
       
-## Step 1 - Set up a clean, reproducible project directory
+## The Basics - Set up a clean, reproducible project repository
+
++ Create a new repository on Github.com
+  + Choose a meaningful repository name
+  + Be sure to initialize with a Readme file by clicking the checkbox (somehow it helps RStudio and GitHub set an initial connection)
+  + After creating the repository
+  
+![](presentation-assets/github-create.png)
+
+## The Basics - Set up a clean, reproducible project repository
+
++ After creating the repository, click 'Clone or Download' and copy the link to the repository. 
+
+![](presentation-assets/clone.png)
+
+
+## The Basics - Set up a clean, reproducible project repository
+
++ Open up RStudio and navigate through 'File' -> 'New Project'
++ Choose 'Version Control' -> 'Git'
++ Then paste the link you copied from github.com into 'Repository URL' and click 'Create Project'
+
+![](presentation-assets/clone2.png)
+
+
+
+
+## The Basics - Set up a clean, reproducible project repository
 
 + RStudio Rule #1 - use projects!  
-  + Create 'New Project' in the base of your research project's folder
   + Never change the working directory
+  + Once you have created a project, the working directory is automatically set to this file path
 
 ![](presentation-assets/directory.png)
 
 
 
-## Step 2 - Put your raw data in the 'data' folder and never touch again 
+## The Basics - Put your raw data in the 'data' folder and never touch again 
 
 ![](presentation-assets/data-directory.png)
 
-## Step 3 - Organize Scripts
+## The Basics - Organize Scripts
 
 + Document what each script does  
 + If your project requires an elaborate 'readme.txt' with instructions about which scripts to run and in what order, you probably need to automate this. 
 
 ![](presentation-assets/script.png)
 
-## Step 3 - Organize Scripts
+## The Basics - Organize Scripts
 
 + Document what each script does  
 + If your project requires an elaborate 'readme.txt' with instructions about which scripts to run and in what order, you probably need to automate this. 
@@ -136,6 +176,23 @@ But I got tired of being nervous all the time! \par
 
 ![](presentation-assets/script2.png)
 
+
+## Data Analysis - Cleaning
+
+Your analysis may involve 'cleaning' raw data. 
+
++ May be aggregating many individual files
++ Dealing with missing data
++ Merging two or many large datasets
+
+This type of activity should be done by the `cleaning.R` script that takes raw data files and makes them useful.
+
+If at all possibly, do not save intermediate cleaned data. Run scripts that build from raw data everytime so you know it is reproducible. 
+
+*Look at Cleaning.R*
+
+
+## Data Analysis - Pretesting
 
 
 
