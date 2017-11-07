@@ -208,6 +208,24 @@ Git is integrated in RStudio, and for simple changes it often works ok; however,
 
 ![](presentation-assets/gitkraken.png)
 
+## Gitkraken - Stage
+
+![Stage](presentation-assets/gitkraken-stage.png)
+
+## Gitkraken - Commit
+
+![Commit](presentation-assets/gitkraken-commit.png)
+
+## Gitkraken - Push
+
+![Push](presentation-assets/gitkraken-push.png)
+
+## Gitkraken
+
+If you mess up, there is help [on the internet](ohshitgit.com)
+
+![Push](presentation-assets/ohshitgit.png)
+
 ## Commit and Push to Github.com
 
 *Show the Github time machine*
@@ -238,6 +256,22 @@ This is useful.
   
   
 ## How to Prevent Your Code from Breaking
+
+Sometimes, even if you follow these practices, R package updates will break your code!
+
+![Push](presentation-assets/docker.png)
+
+## How to Prevent Your Code from Breaking
+
+I haven't learned Docker yet...
+
+![Push](presentation-assets/docker.png)
+
+## How to Prevent Your Code from Breaking
+
+But Docker allows you to keep a copy of R and RStudio exactly as it is today, so you code can never break due to an update. 
+
+![Push](presentation-assets/docker.png)
 
 ## The Basics - Get Set up On Your Own
 
