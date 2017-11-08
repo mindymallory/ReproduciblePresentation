@@ -10,7 +10,7 @@ header-includes:
   - \hypersetup{colorlinks=false,
             allbordercolors={0 0 0},
             pdfborderstyle={/S/U/W 1}}
-  
+bibliography: references.bib  
 ---
 
 ```{r setup, include=FALSE}
@@ -79,11 +79,37 @@ Have you ever lost an entire paper due to the Word file becoming corrupted then 
 But I got tired of being nervous all the time! \par
 
 
-##
+## Bill Tomek's [-@tomek1993confirmation] AJAE Piece on the Importance of Reproducibility
 
+
+
+*Benefits of Confirmation*
+
++ Reproducibitiy can explain divergent economic results
+    "Applied economists usually pre-test with a given dataset to decide on a final model. The process of arriving at hte final model is often neither well understood nore well explained"
+    
++ If two competing hypotheses were fully transparant about methods, the research community can vet which is more appropriate and even spot errors.
+
+\tiny{Hat-Tip: Phil Garcia}
+
+## Bill Tomek's [-@tomek1993confirmation] AJAE Piece on the Importance of Reproducibility
+
+*Difficulties in Confirmation*
+
++ **Data**: Rely on secondary data (say, from USDA), which may be revised and don't keep original files  
+
++ **Models**: Its often hard to tell *exactly* what a researcher did in terms of model selection, pre-testing, etc, from reading paper alone  
+
++ **Computer Codes**: Different software may use different methods to implement the same model. Or updates of the same software may change the exact method  
+
++ **Effect on Colleagues**: We all hate publicly making mistakes!
+
+\tiny{Hat-Tip: Phil Garcia}
+
+## 
 
 \centering
-  There is a better way!\par
+  Now we have tools and solutions to these 'difficulties'!\par
 
 
 ## Reproducible research with R, RStudio, RMarkdown, Knitr, and Github
@@ -237,7 +263,7 @@ If you mess up, there is help [on the internet](ohshitgit.com)
 
 ## Use 'Releases' to Mark Important Milestones in Paper's Progress
 
-Since Github was developed by and for software developers, 'Releases' are built it. 
+Since Github was developed by and for software developers, 'Releases' are built in. 
 
 + Releases signify specific points in the repository's commit history
   + i.e. v2.3.0 of your software
@@ -292,6 +318,8 @@ Most of my co-authors write papers in Word.
 + I love writing in Word too! 
   + Track changes and comment bubbles in the margin are genious
   
++ Updating tables and figures in Word is a nightmare
+  
 ## Working with Colaborators who don't RMarkdown 
 
 Compromise for Ease of Use and Reproducibility
@@ -301,6 +329,20 @@ Compromise for Ease of Use and Reproducibility
 + Create separate Tables and Figures document generated with R and RMarkdown
 
 You risk making an error in your results discussion in the manuscript because you are manually typing numerical results, but at least the tables and figures are reproducible. 
+
+## Back to Tomek's 1993 AJAE Piece on the Importance of Reproducibility
+
+*Difficulties in Confirmation*
+
++ **Data**: Rely on secondary data (say from USDA), which may be revised and don't keep original files  
+
++ **Models**: Its often hard to tell *exactly* what a researcher did in terms of model selection, pre-testing, etc, from reading paper alone  
+
++ **Computer Codes**: Different software may use different methods to implement the same model. Or updates of the same software may change the exact method  
+
++ **Effect on Colleagues**: We all hate publicly making mistakes!
+
+**All solved by using modern reproducible methods!**
 
 ## The Basics - Get Set up On Your Own
 
@@ -315,6 +357,7 @@ install.packages("broom")
 install.packages("vars")
 ```
 
+These packages aren't required for reproducibility, but I use them in the example research project.
       
 ## The Basics - Get Set up On Your Own
 
@@ -354,19 +397,33 @@ I started with this book: [Reproducible Research with R and RStudio](http://chri
 
 Lots of resources on the web: 
 
-Reproducible Research
+*Reproducible Research*
 
-+ [Project Tier](http://www.projecttier.org/)
++ [Project Tier](http://www.projecttier.org/) 
+
 + [Blog post by Jodie Burchell](http://t-redactyl.io/blog/2016/10/a-crash-course-in-reproducible-research-in-r.html)
 + [Tutorial by Karl Broman](http://kbroman.org/steps2rr/)
-+ [Github Repository for this presentation](https://github.com/mindymallory/ReproduciblePresentation)
-+ [PDF of this Presentation](http://mindymallory.com/ReproduciblePresentation/pdfs/presentation.pdf)
-+ [PDF of Tomek's 1993 'Confirmation' Paper]()
++ [Tomek's 1993 'Confirmation' Paper](https://www.researchgate.net/publication/240248912_Confirmation_and_Replication_in_Empirical_Econometrics_A_Step_Toward_Improved_Scholarship)
 
-Getting Started with R
+*Getting Started with R*
 
 + [Grolemund and Wickham's R for Data Science](http://r4ds.had.co.nz/)
++ [Colonescu's book on Econometrics with R](https://bookdown.org/ccolonescu/RPoE4/)
 
+\tiny{Hat-Tip: Victor Kononenko for Project Tier info} 
 
+## Thank You!
 
+**Github Repository for this presentation**
 
++ [github.com/mindymallory/ReproduciblePresentation](https://github.com/mindymallory/ReproduciblePresentation)
+
+**PDF of this presentation**
+
++ [mindymallory.com/ReproduciblePresentation/pdfs/presentation.pdf](http://mindymallory.com/ReproduciblePresentation/pdfs/presentation.pdf)
+
+**Contact**
+
++ [mallorym@illinois.edu](mailto:mallorym@illinois.edu)
+
+## References
