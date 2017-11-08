@@ -5,6 +5,11 @@ date: "October 24, 2017"
 output:
   beamer_presentation: 
     theme: "Boadilla"
+    color: "beaver"
+header-includes:
+  - \hypersetup{colorlinks=false,
+            allbordercolors={0 0 0},
+            pdfborderstyle={/S/U/W 1}}
   
 ---
 
@@ -103,7 +108,7 @@ But I got tired of being nervous all the time! \par
 ## Reproducible research with R, RStudio, RMarkdown, Knitr, and Github
 
 
-  + Github - is a cloud-based repository that is great at versioning (it was designed by and for software developers)
+  + [Github](github.com) - is a cloud-based repository that is great at versioning (it was designed by and for software developers)
       
       
 
@@ -178,23 +183,23 @@ Then, your main analysis can be performed in analysis.R. This script will fit mo
 
 *Look at manuscript.Rmd*
 
-## Commit and Push to Github.com
+## Stage, Commit, and Push to Github.com
 
-Unlike Dropbox and Box that automatically watch for changes and upload new file versions to cloud storage, you have to manually commit changes and send them to the remote repository. 
++ Unlike Dropbox and Box that automatically watch for changes and upload new file versions to cloud storage, you have to manually commit changes and send them to the remote repository. 
 
-Can be tricky, until you get in the habit of commiting and pushing, similar to how we automatically have the reflext to save a file every so often.
++ Can be tricky, until you get in the habit of commiting and pushing, similar to how we automatically have the reflext to save a file every so often.
 
-Advantage - If your file gets corrupted, it won't overwrite all your copies with the corrupted version (this happened to me).
++ Advantage - If your file gets corrupted, it won't overwrite all your copies with the corrupted version (this happened to me with Dropbox).
 
-Github is a time machine, you can go back and recover your files at any state of the repository. 
++ Github is a time machine, you can go back and recover your files at any state of the repository. 
 
-## Commit and Push to Github.com
+## Stage, Commit, and Push to Github.com
 
 Git Basic Steps:
 
-+ Stage - means get changes ready to be commited to the repository
-+ Commit - means they are 'permanately' part of the repository record
-+ Push - sends you committed changes to the remote repository for safe keeping forever. 
++ **Stage** - means get changes ready to be commited to the repository
++ **Commit** - means they are 'permanately' part of the repository record
++ **Push** - sends you committed changes to the remote repository for safe keeping forever. 
 
 ## Git Clients
 
@@ -247,12 +252,15 @@ Since Github was developed by and for software developers, 'Releases' are built 
 
 This is useful.
 
-+ Say you have a table in your conference paper. 
-+ You cut it for the AJAE submission
-+ It gets rejected and you send it to JARE
-+ Reviewer #2 asks you do exactly this and R&R back to JARE
-  + You can go to the AAEA 'release' and recover exactly the state of your repository where you have working code that generates this table
-  + Easily incorporate it back into the more recent version
++ Say you have a table in your conference paper.  
+
++ You cut it for the AJAE submission  
+
++ It gets rejected and you send it to JARE  
+
++ Reviewer #2 asks you to add exactly this and R&R back to JARE
+   - You can go to the AAEA 'release' and recover exactly the state of your repository where you have working code that generates this table
+   - Easily incorporate it back into the more recent version
   
   
 ## How to Prevent Your Code from Breaking
@@ -263,7 +271,9 @@ Sometimes, even if you follow these practices, R package updates will break your
 
 ## How to Prevent Your Code from Breaking
 
-I haven't learned Docker yet...
+I haven't learned [Docker](docker.com) yet...
+
+[Info](https://benmarwick.github.io/UW-eScience-docker-for-reproducible-research/)
 
 ![Push](presentation-assets/docker.png)
 
@@ -272,6 +282,25 @@ I haven't learned Docker yet...
 But Docker allows you to keep a copy of R and RStudio exactly as it is today, so you code can never break due to an update. 
 
 ![Push](presentation-assets/docker.png)
+
+## Working with Colaborators who don't RMarkdown
+
+Hypothesis: Applied economists love Microsoft Word more than theoretical economists
+
+Most of my co-authors write papers in Word. 
+
++ I love writing in Word too! 
+  + Track changes and comment bubbles in the margin are genious
+  
+## Working with Colaborators who don't RMarkdown 
+
+Compromise for Ease of Use and Reproducibility
+
++ Write Manuscript in Word
+
++ Create separate Tables and Figures document generated with R and RMarkdown
+
+You risk making an error in your results discussion in the manuscript because you are manually typing numerical results, but at least the tables and figures are reproducible. 
 
 ## The Basics - Get Set up On Your Own
 
@@ -318,5 +347,23 @@ Now your RStudio project is connected to Github. Periodically commit your local 
 + Stage Changes
 + Commit Changes
 + Push Changes
+
+## Resources to Learn More
+
+I started with this book: [Reproducible Research with R and RStudio](http://christophergandrud.github.io/RepResR-RStudio/)
+
+Lots of resources on the web: 
+
+Reproducible Research
+
++ [Project Tier](http://www.projecttier.org/)
++ [Blog post by Jodie Burchell](http://t-redactyl.io/blog/2016/10/a-crash-course-in-reproducible-research-in-r.html)
++ [Tutorial by Karl Broman](http://kbroman.org/steps2rr/)
+
+Getting Started with R
+
++ [Grolemund and Wickham's R for Data Science](http://r4ds.had.co.nz/)
+
+
 
 
