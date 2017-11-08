@@ -1,7 +1,7 @@
 ---
 title: "Reproducible Research Practices for Economists"
 author: "Mindy L. Mallory"
-date: "October 24, 2017"
+date: "November 10, 2017"
 output:
   beamer_presentation: 
     theme: "Boadilla"
@@ -359,6 +359,9 @@ Reproducible Research
 + [Project Tier](http://www.projecttier.org/)
 + [Blog post by Jodie Burchell](http://t-redactyl.io/blog/2016/10/a-crash-course-in-reproducible-research-in-r.html)
 + [Tutorial by Karl Broman](http://kbroman.org/steps2rr/)
++ [Github Repository for this presentation](https://github.com/mindymallory/ReproduciblePresentation)
++ [PDF of this Presentation](http://mindymallory.com/ReproduciblePresentation/pdfs/presentation.pdf)
++ [PDF of Tomek's 1993 'Confirmation' Paper]()
 
 Getting Started with R
 
