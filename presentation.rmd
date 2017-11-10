@@ -429,4 +429,6 @@ Now your RStudio project is connected to Github. Periodically commit your local 
 + Commit Changes
 + Push Changes
 
+When you change machines, you 'Pull' from the repository so that your local files are the most up-to-date. 
+
 ## References
