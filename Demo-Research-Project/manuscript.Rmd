@@ -43,7 +43,7 @@ We find that all the series are non-stationary. See table 1 for results of Augme
 
 # Conclusions
 
-This concludes our paper. Future research should do much more. The end. Really the end. Really really the end.
+This concludes our paper. Future research should do much more. The end. Really the end. Really really the end. For REal.
 
 \pagebreak
 
