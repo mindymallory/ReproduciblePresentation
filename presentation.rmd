@@ -253,7 +253,7 @@ Git is integrated in RStudio, and for simple changes it often works ok; however,
 
 ## Gitkraken
 
-If you mess up, there is help [on the internet](ohshitgit.com)
+If you mess up, there is help [on the internet](http://www.ohshitgit.com)
 
 ![Push](presentation-assets/ohshitgit.png)
 
@@ -297,7 +297,7 @@ Sometimes, even if you follow these practices, R package updates will break your
 
 ## How to Prevent Your Code from Breaking
 
-I haven't learned [Docker](docker.com) yet...
+I haven't learned [Docker](https://www.docker.com) yet...
 
 [Info](https://benmarwick.github.io/UW-eScience-docker-for-reproducible-research/)
 
@@ -344,52 +344,7 @@ You risk making an error in your results discussion in the manuscript because yo
 
 **All solved by using modern reproducible methods!**
 
-## The Basics - Get Set up On Your Own
 
-+ Install [R](https://www.r-project.org/), [RStudio](https://www.rstudio.com/), [Git](https://git-scm.com/downloads), and [Gitkraken](https://www.gitkraken.com/)
-+ Install the following packages in R by executing the following commands in the RStudio console:
-
-```{r, echo = TRUE, eval=FALSE}
-install.packages("xts")
-install.packages("tseries")
-install.packages("tsDyn")
-install.packages("broom")
-install.packages("vars")
-```
-
-These packages aren't required for reproducibility, but I use them in the example research project.
-      
-## The Basics - Get Set up On Your Own
-
-+ Create a new repository on Github.com
-  + Choose a meaningful repository name
-  + Be sure to initialize with a Readme file by clicking the checkbox (somehow it helps RStudio and GitHub set an initial connection)
-  + After creating the repository
-  
-![](presentation-assets/github-create.png)
-
-## The Basics - Get Set up On Your Own
-
-+ After creating the repository, click 'Clone or Download' and copy the link to the repository. 
-
-![](presentation-assets/clone.png)
-
-
-## The Basics - Get Set up On Your Own
-
-+ Open up RStudio and navigate through 'File' -> 'New Project'
-+ Choose 'Version Control' -> 'Git'
-+ Then paste the link you copied from github.com into 'Repository URL' and click 'Create Project'
-
-![](presentation-assets/clone2.png)
-
-## The Basics - Get Set up On Your Own
-
-Now your RStudio project is connected to Github. Periodically commit your local changes to the Github repository. 
-
-+ Stage Changes
-+ Commit Changes
-+ Push Changes
 
 ## Resources to Learn More
 
@@ -425,5 +380,53 @@ Lots of resources on the web:
 **Contact**
 
 + [mallorym@illinois.edu](mailto:mallorym@illinois.edu)
+
+
+## Tutorial to Get Set up On Your Own
+
++ Install [R](https://www.r-project.org/), [RStudio](https://www.rstudio.com/), [Git](https://git-scm.com/downloads), and [Gitkraken](https://www.gitkraken.com/)
++ Install the following packages in R by executing the following commands in the RStudio console:
+
+```{r, echo = TRUE, eval=FALSE}
+install.packages("xts")
+install.packages("tseries")
+install.packages("tsDyn")
+install.packages("broom")
+install.packages("vars")
+```
+
+These packages aren't required for reproducibility, but I use them in the example research project.
+      
+## Tutorial to Get Set up On Your Own
+
++ Create a new repository on Github.com
+  + Choose a meaningful repository name
+  + Be sure to initialize with a Readme file by clicking the checkbox (somehow it helps RStudio and GitHub set an initial connection)
+  + After creating the repository
+  
+![](presentation-assets/github-create.png)
+
+##  Tutorial to Get Set up On Your Own
+
++ After creating the repository, click 'Clone or Download' and copy the link to the repository. 
+
+![](presentation-assets/clone.png)
+
+
+##  Tutorial to Get Set up On Your Own
+
++ Open up RStudio and navigate through 'File' -> 'New Project'
++ Choose 'Version Control' -> 'Git'
++ Then paste the link you copied from github.com into 'Repository URL' and click 'Create Project'
+
+![](presentation-assets/clone2.png)
+
+## Tutorial to Get Set up On Your Own
+
+Now your RStudio project is connected to Github. Periodically commit your local changes to the Github repository. 
+
++ Stage Changes
++ Commit Changes
++ Push Changes
 
 ## References
